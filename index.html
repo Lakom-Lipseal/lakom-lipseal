@@ -1,1 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>LAKOM Lipseal | Natural Lip & Skin Balm</title>
+
+    <meta name="description" content="LAKOM Lipseal natural lip and skin balm, made with organic coconut oil and beeswax. Handmade in England.">
+
+    <meta name="theme-color" content="#5b6f24">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #29271f;
+            background: #fbfaf6;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #fbfaf6;
+            padding: 22px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e5e1d5;
+        }
+
+        .logo {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 42px;
+            letter-spacing: 4px;
+            color: #1e1b16;
+            font-weight: bold;
+        }
+
+        .tagline {
+            color: #5b6f24;
+            font-size: 17px;
+            margin-top: 2px;
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 18px 10px;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 1100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        .intro {
+            max-width: 800px;
+            margin: 35px auto 10px;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            color: #29271f;
+        }
+
+        .intro h1 span {
+            color: #5b6f24;
+        }
+
+        .intro p {
+            font-size: 19px;
+            color: #5d5a50;
+            margin-bottom: 18px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 15px 0 20px;
+            color: #29271f;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background: #5b6f24;
+            color: white;
+            text-decoration: none;
+            padding: 15px 38px;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: 0.2s ease;
+        }
+
+        .buy-button:hover {
+            background: #46561b;
+            transform: translateY(-1px);
+        }
+
+        .benefits {
+            max-width: 1000px;
+            margin: 55px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .benefit {
+            text-align: center;
+            padding: 25px 15px;
+            background: white;
+            border: 1px solid #e7e3d9;
+            border-radius: 8px;
+        }
+
+        .benefit-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .benefit h3 {
+            font-size: 17px;
+            margin-bottom: 6px;
+            color: #4f611f;
+        }
+
+        .benefit p {
+            font-size: 14px;
+            color: #68655c;
+        }
+
+        .details {
+            background: #f0eee5;
+            padding: 55px 20px;
+        }
+
+        .details-inner {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .details h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .details p {
+            font-size: 17px;
+            color: #5d5a50;
+            margin-bottom: 20px;
+        }
+
+        .ingredients {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            border: 1px solid #e0ddd3;
+            margin: 25px auto;
+            max-width: 600px;
+        }
+
+        .ingredients strong {
+            color: #4f611f;
+        }
+
+        .final-buy {
+            padding: 55px 20px;
+            text-align: center;
+            background: #fbfaf6;
+        }
+
+        .final-buy h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .final-buy p {
+            margin-bottom: 20px;
+            color: #666257;
+        }
+
+        footer {
+            background: #29271f;
+            color: #eeeae0;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+
+        footer strong {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        footer p {
+            margin-top: 8px;
+            color: #c8c4b8;
+        }
+
+        @media (max-width: 700px) {
+
+            .logo {
+                font-size: 34px;
+            }
+
+            .hero {
+                padding: 15px 8px 5px;
+            }
+
+            .hero-image {
+                border-radius: 4px;
+            }
+
+            .intro {
+                margin-top: 28px;
+            }
+
+            .intro h1 {
+                font-size: 30px;
+            }
+
+            .intro p {
+                font-size: 17px;
+            }
+
+            .benefits {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+                margin: 40px auto;
+            }
+
+            .benefit {
+                padding: 20px 10px;
+            }
+
+            .benefit h3 {
+                font-size: 15px;
+            }
+
+            .benefit p {
+                font-size: 13px;
+            }
+
+            .details {
+                padding: 45px 18px;
+            }
+
+            .details h2 {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 420px) {
+
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+
+            .benefit {
+                max-width: 330px;
+                margin: auto;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LAKOM</div>
+    <div class="tagline">Lip & Skin Balm</div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <img
+            src="lakom-hero.png"
+            alt="LAKOM Lipseal natural lip and skin balm made with organic coconut oil and beeswax"
+            class="hero-image">
+    </section>
+
+    <section class="intro">
+
+        <h1>
+            Natural care, <span>pure & simple.</span>
+        </h1>
+
+        <p>
+            Nourishing lip and skin balm made with organic coconut oil
+            and beeswax.
+        </p>
+
+        <div class="price">£7.99</div>
+
+        <!-- PAYPAL BUTTON WILL GO HERE -->
+        <a href="#" class="buy-button">
+            BUY NOW
+        </a>
+
+    </section>
+
+    <section class="benefits">
+
+        <div class="benefit">
+            <div class="benefit-icon">🌿</div>
+            <h3>100% Natural</h3>
+            <p>Made with natural ingredients.</p>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">🥥</div>
+            <h3>Coconut Oil</h3>
+            <p>Made with organic coconut oil.</p>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">🐝</div>
+            <h3>Beeswax</h3>
+            <p>Made with natural beeswax.</p>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">🇬🇧</div>
+            <h3>Handmade in England</h3>
+            <p>Made with care in England.</p>
+        </div>
+
+    </section>
+
+    <section class="details">
+
+        <div class="details-inner">
+
+            <h2>Simple ingredients. Natural care.</h2>
+
+            <p>
+                LAKOM Lipseal is a simple, nourishing balm designed to
+                help care for dry lips and skin.
+            </p>
+
+            <div class="ingredients">
+
+                <p>
+                    <strong>Ingredients</strong>
+                </p>
+
+                <p>
+                    Organic Coconut Oil &amp; Beeswax
+                </p>
+
+                <p>
+                    5ml / 0.16oz
+                </p>
+
+            </div>
+
+            <p>
+                External use only.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="final-buy">
+
+        <h2>Love your skin. Love nature.</h2>
+
+        <p>
+            Keep LAKOM close whenever your lips or skin need a little
+            extra care.
+        </p>
+
+        <!-- SECOND PAYPAL BUTTON WILL GO HERE -->
+        <a href="#" class="buy-button">
+            BUY NOW
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <strong>LAKOM</strong>
+
+    <p>
+        Lip &amp; Skin Balm
+    </p>
+
+    <p>
+        Handmade in England
+    </p>
+
+    <p>
+        Distributed by Danbo Enterprises
+    </p>
+
+</footer>
+
+</body>
+</html>
