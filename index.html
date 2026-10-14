@@ -391,9 +391,7 @@
             extra care.
         </p>
 
-        <!-- SECOND PAYPAL BUTTON WILL GO HERE -->
-        <a href="#" class="buy-button">
-            BUY NOW
+        <div id="paypal-container-bottom"></div>ye
         </a>
 
     </section>
@@ -424,6 +422,10 @@
 paypal.HostedButtons({
     hostedButtonId: "D64DNWGY4S638",
 }).render("#paypal-container-D64DNWGY4S638");
+
+paypal.HostedButtons({
+    hostedButtonId: "D64DNWGY4S638",
+}).render("#paypal-container-bottom");
 </script>
 
 </body>
